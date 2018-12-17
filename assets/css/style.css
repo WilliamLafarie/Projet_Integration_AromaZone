@@ -49,24 +49,19 @@ header section {
 }
 
 header section img {
-    max-width: 400px;
-    width: 100%;
+    max-width: 100px;
 }
 
-form {
+header form {
     border-bottom: 1px solid var(--darkblue);
 }
 
-form input { 
-    
-}
-
-form button { 
+header form button { 
     background: none;
     margin-right: auto;
 }
 
-form button img{ 
+header form button img{ 
     max-width: 25px;
 }
 
@@ -163,19 +158,50 @@ h1,h2,h3 {
 }
 
 .product section:first-child h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
+    letter-spacing: 6px;
 }
 
-.product section:first-child ul:last-child li img { 
+.feuille { 
     max-width: 32px;
 }
 
-.product section:first-child p { 
+.product section:first-child p:first-of-type { 
     font-family: 'OpenSans-Regular';
     font-size: 1rem;
     text-align: center;
     word-spacing: 2px;
+    width: 60%;
 }
+
+.product section:first-child p:last-of-type {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.product form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product form img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.product form input {
+    height: 3rem;
+    width: 30%;
+    margin: 0 1rem;
+}
+
+
+
+
+
+
 
 
 
