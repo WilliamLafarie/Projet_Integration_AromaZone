@@ -1,0 +1,26 @@
+:root {
+    --brown: #FCEFD6;
+    --darkblue: #027180;
+    --pink: #DEA3A4;
+    --blue: #7389AB;
+    --green: #8BC9B5;
+    --darkgreen: #9DBCAD;
+    --text:#696969;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+*:focus { 
+    outline: none;
+}
+
+body { 
+    font-size: 62.5%;
+}

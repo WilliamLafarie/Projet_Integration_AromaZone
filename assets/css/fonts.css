@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Amatic";
+    src: url("./../fonts/Amatic.ttf");
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: "Amatic-Bold";
+    src: url("./../fonts/Amatic_Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: "OpenSans-Regular";
+    src: url("./../fonts/OpenSans-Regular.ttf")
+ }
+ 
+ @font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url("./../fonts/OpenSans-SemiBold.ttf")
+ }
+ 
+ @font-face {
+    font-family: "OpenSans-Bold";
+    src: url("./../fonts/OpenSans-Bold.ttf")
+ }
+ 
