@@ -1,13 +1,3 @@
-:root {
-    --brown: #FCEFD6;
-    --darkblue: #027180;
-    --pink: #DEA3A4;
-    --blue: #7389AB;
-    --green: #8BC9B5;
-    --darkgreen: #9DBCAD;
-    --text:#696969;
-}
-
 * { 
     margin: 0;
     padding: 0;
@@ -21,6 +11,7 @@
     outline: none;
 }
 
-body { 
+
+/* html { 
     font-size: 62.5%;
-}
+} */

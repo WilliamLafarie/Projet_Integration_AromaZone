@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="./assets/img/svg/logo_small" />
     <title>Fiche produit</title>
 </head>
 <body class="productPage">
@@ -14,7 +16,7 @@
 
     <header>
         <section>
-            <img src="./assets/img/svg/logo_small.svg" al t="Logo">
+            <img src="./assets/img/svg/logo_big.svg" al t="Logo">
             <form>
                 <input type="text" size=50">
                 <button><img src="./assets/img/search.png" alt="searchIcon"></button>
@@ -38,48 +40,124 @@
         </nav>
     </header>
 
-    <!-- SECTION PRODUCT -->
-    <section class="product">
+    <main>
+        <!-- SECTION PRODUCT -->
+        <section class="product">
 
-        <section>
+            <section>
 
-            <ul>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Propriétés & Utilisation</a></li>
-                <li><a href="#">Composition</a></li>
-                <li><a href="#">Avis</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Propriétés & Utilisation</a></li>
+                    <li><a href="#">Composition</a></li>
+                    <li><a href="#">Avis</a></li>
+                </ul>
 
-            <h3>Huile essentielles et aromathérapie</h3>
-            <h1>Huile de soin cheveux bio</h1>
+                <h3>Huile essentielles et aromathérapie</h3>
+                <h1>Huile de soin cheveux bio</h1>
 
-            <ul>
-                <li><img class="feuille" src="./assets/img/picto_feuille.png" alt="feuille"></li>
-                <li><img class="feuille" src="./assets/img/picto_feuille.png" alt="feuille"></li>
-                <li><img class="feuille" src="./assets/img/picto_feuille.png" alt="feuille"></li>
-                <li><img class="feuille" src="./assets/img/picto_feuille.png" alt="feuille"></li>
-                <li><img class="feuille" src="./assets/img/picto_feuilleOutline.png" alt="feuilleOutline"></li>
-            </ul>
+                <ul>
+                    <li><img class="feuille" src="./assets/img/picto_feuille.png" alt="feuille"></li>
+                    <li><img class="feuille" src="./assets/img/picto_feuille.png" alt="feuille"></li>
+                    <li><img class="feuille" src="./assets/img/picto_feuille.png" alt="feuille"></li>
+                    <li><img class="feuille" src="./assets/img/picto_feuille.png" alt="feuille"></li>
+                    <li><img class="feuille" src="./assets/img/picto_feuilleOutline.png" alt="feuilleOutline"></li>
+                </ul>
 
-            <p>Une huile qui fortifie, nourrit, répare, fait briller et discipline les cheveux au naturel en toute simplicité</p>
-            <p>7,90€</p>
-            
-            <form action="">
-                <div>
-                    <img src="./assets/img/moins.png" alt="moins">
-                    <input type="text">
-                    <img src="./assets/img/plus.png" alt="plus">
-                </div>
+                <p>Une huile qui fortifie, nourrit, répare, fait briller et discipline les cheveux au naturel en toute simplicité</p>
+                <p>7,90€</p>
+                
+                <form action="">
+                    <div>
+                        <img src="./assets/img/moins.png" alt="moins">
+                        <input type="text">
+                        <img src="./assets/img/plus.png" alt="plus">
+                    </div>
 
-                <button type="submit">Ajouter au panier</button>
-                <button><img src="./assets/img/picto_fav.png" alt="bouton favori"></button>
-            </form>
-            
+                    <button type="submit">Ajouter au panier</button>
+                    <button><img src="./assets/img/picto_fav.png" alt="bouton favori"></button>
+                </form>
+                
+            </section>
+
+            <section>
+            </section>
+
         </section>
 
-        <section>
+        <section class="presentation">
+
+            <h2>Présentation</h2>
+            <p>Synergie de 8 huiles végétales BIO réputées pour leurs vertus merveilleuses sur les cheveux, cette huile de soin cheveux BIO s'utilise un bain d'huile, en friction ou en soin sans rinçage sur les pointes. Ce soin végétal d'exception alliant Ricin, Coco, Amla, Avocat, Olive, Brocoli, Jojoba et Moutarde, fortifie, nourrit, répare, fait briller et discipline les cheveux au naturel en toute simplicité. Cette huile s'utilise pure ou agrémentée d'actifs, huiles essentielles ou fragrances de votre choix pour composer votre soin 100% personnalisé adapté au soin de vos cheveux et à toutes vos envies ! Retrouvez les différents ajouts possibles et leurs dosages sur cette fiche conseil.</p>
 
         </section>
-    </section>
+
+        <section class="spacer"></section>
+
+        <section class="properties">
+
+            <h2>Propriétés & utilisation</h2>
+
+            <ul class="nav">
+                <li><a link-data="proprietes" href="#">Propriétés</a></li>
+                <li><a link-data="utilisation" href="#">Utilisaton</a></li>
+                <li><a link-data="conservation" href="#">Conservation</a></li>
+            </ul>
+            
+            <article>
+                
+            </article>
+            
+
+        </section>
+
+        <section class="spacer2">
+            <h3>Créer votre huile de soin en 3 minutes</h3>
+            <a href="#">Je me lance <i class="fas fa-chevron-right"></i></a>
+        </section>
+
+        <section class="composition">
+            <h2>Composition</h2>
+            <p>Notre volonté: vous offrir une huile de soin cheveux 100% d'origine naturelle, douce et respectueuse de la nature et de votre peau</p>
+
+            <ul>
+                <li>Ingrédients:</li>
+                <li>Ricinus communis seed oil* (huile végétale de Ricin BIO), Olea europaea fruit oil* (huile végétale d'Olive BIO), Cocos nucifera oil* (huile végétale de Coco BIO), Persea gratissima oil* (huile végétale d'Avocat BIO), Brassica nigra seed oil* (huile végétale de Moutarde BIO), Simmondsia chinensis seed oil* (huile végétale de Jojoba BIO), Brassica oleracea italica seed oil* (huile végétale de Brocoli BIO), Emblica officinalis fruit powder* (poudre d'Amla BIO), Tocopherol (vitamine E), Helianthus annuus seed oil (huile végétale de Tournesol, huile support du tocophérol).</li>
+            </ul>
+        </section>
+
+        <section class="focus">
+            <h2>Focus sur quelques actifs</h2>
+            <section>
+                <figure>
+                    <img src="./assets/img/svg/actif_avocat.svg" alt="avocat">
+                    <figcaption>Huile végétale d'avocat</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./assets/img/svg/actif_brocoli.svg" alt="brocoli">
+                    <figcaption>Huile végétale de brocoli</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="./assets/img/svg/actif_olive.svg" alt="olive">
+                    <figcaption>Huile végétale d'olive</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./assets/img/svg/actif_jojoba.svg" alt="jojoba">
+                    <figcaption>Huile végétale de jojoba</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./assets/img/svg/actif_coco.svg" alt="coco">
+                    <figcaption>Huile végétale de coco</figcaption>
+                </figure>
+            </section>
+
+        </section>
+
+    </main>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
