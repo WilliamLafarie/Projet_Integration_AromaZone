@@ -2,7 +2,7 @@
     Déclaration des variables
 */
 
-let myNav = document.querySelectorAll('.properties ul li a');
+let myNav = document.querySelectorAll('main section:nth-child(4) ul li a');
 console.log(myNav);
 //
 
@@ -48,7 +48,7 @@ const fetchHtmlData = (page = 'proprietes') => {
     // 2ème callback: Manipuler les données
     .then( textResponse => {
         // Ajouter le contenu dans le DOM            
-        document.querySelector('.properties article').innerHTML = textResponse
+        document.querySelector('main section:nth-child(4) article').innerHTML = textResponse
 
         // Envoyer le nom de la page dans le dernier then
         return page

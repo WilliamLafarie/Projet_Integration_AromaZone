@@ -1,0 +1,527 @@
+@import url('fonts.css');
+
+/*
+   === Variable de couleurs ===
+*/ 
+
+:root {
+    --brown: #FCEFD6;
+    --darkblue: #027180;
+    --pink: #DEA3A4;
+    --blue: #7389AB;
+    --green: #8BC9B5;
+    --darkgreen: #9DBCAD;
+    --text:#696969;
+}
+
+/*
+    === Globales ===
+*/
+
+p,a,h1,h2,h3 {
+    color:var(--text);
+}
+
+p,a {
+    font-family: 'OpenSans-Regular'
+}
+
+h1,h2,h3 { 
+    font-family: 'Amatic';
+    font-weight: normal;
+}
+
+main section h2 {
+    font-size: 5rem;
+    font-family: 'Amatic-Bold';
+    letter-spacing: .5rem;
+}
+
+main section h2:after { 
+    content: '';
+    display: block;
+    height: 2rem;
+    margin: 1rem 0;
+    width: 4rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    border-radius: .5rem;
+}
+
+/*
+    === Header ===
+*/ 
+
+header {
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    position:relative;
+    top:0;
+}
+
+header section {
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-around;
+    -moz-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+header form {
+    border-bottom: .1rem solid var(--darkblue);
+    margin: 0 2rem;
+}
+
+header form button { 
+    background: none;
+    margin-right: auto;
+}
+
+header form button img{ 
+    max-width: 25px;
+}
+
+header section ul li { 
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+header section ul li a img { 
+    max-width: 25px;
+    min-width: 25px;
+}
+
+nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+nav ul { 
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+}
+
+nav ul li { 
+    margin:0 1.5rem;
+    margin-bottom: 1rem;
+}
+
+nav ul li a { 
+    font-family: 'OpenSans-Regular';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+nav ul li:nth-child(even) img {
+    transform: rotate(45deg);
+    max-width: 25px;
+}
+
+/*
+    === Section Produit ===
+*/ 
+
+main section:first-child {
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+}
+
+main section:first-child section {
+    display: inline-block;
+    vertical-align: top;
+    background-color: var(--brown);
+    width: 50%;
+    padding: 8rem 0;
+}
+
+main section:first-child section:last-child {
+    background-image: url('./../img/photo/photo.jpg');
+    background-size: cover;
+}
+
+main section:first-child section:first-child ul {
+    text-align: center;
+}
+
+main section:first-child section:first-child ul:first-child {
+    border-top: .1rem solid var(--text);
+    border-bottom: .1rem solid var(--text);
+}
+
+main section:first-child section:first-child ul:first-child li {
+    display: inline-block;
+    padding: 1.5rem;
+}
+
+main section:first-child section:first-child ul li a {
+    font-family: 'OpenSans-Regular';
+    font-size: 1.5rem;
+}
+
+main section:first-child section:first-child h3 {
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+main section:first-child section:first-child h1 {
+    font-size: 7rem;
+    word-spacing: 1rem;
+    letter-spacing: .5rem;
+    text-align: center;
+}
+
+main section:first-child section:first-child ul:last-of-type {
+   padding: 2rem 0;
+}
+
+main section:first-child section:first-child ul:last-of-type li {
+    display: inline-block;
+}
+
+main section:first-child section:first-child ul:last-of-type li img {
+    max-width: 25px;
+}
+
+main section:first-child section:first-child p:first-of-type {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+    padding: 2rem 16.5rem;
+}
+
+main section:first-child section:first-child p:last-of-type {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 3rem;
+    letter-spacing: .1rem;
+    padding: 5rem 0;
+    text-align: center;
+} 
+
+main section:first-child form { 
+    text-align: center;
+}
+
+main section:first-child form img {
+    max-width: 3.2rem;
+    max-height: 3.2rem;
+    vertical-align: middle;
+}
+
+main section:first-child form input {
+    font-family: 'OpenSans-SemiBold';
+    font-size: 2rem;
+    width: 8rem;
+    height: 5rem;
+    margin: 0 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+main section:first-child form div {
+    margin: 2rem 0;
+}
+
+main section:first-child form button:first-of-type {
+    background-color: var(--darkblue);
+    color:white;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+    padding: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+main section:first-child form button:last-of-type {
+    background-color: transparent;
+    border: .1rem solid var(--darkblue);
+    font-family: 'OpenSans-Bold';
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+    width: 5rem;
+    height: 5rem;
+ }
+
+ main section:first-child form button:last-of-type img {
+    max-width: 2.5rem;
+ }
+
+
+/*
+    === Section Présentation ===
+*/ 
+
+main section:nth-child(2) {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+main section:nth-child(2) h2:after { 
+    margin: 1rem auto;
+    border-top: .3rem solid var(--pink);
+}
+
+main section:nth-child(2) p { 
+    text-align: justify;
+    text-align-last: left;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    word-spacing: .3rem;
+    padding: 2rem 30rem;
+    line-height: 2;
+}
+
+/*
+    === Spacer n°1 ===
+*/ 
+
+main section:nth-child(3) {
+    background-image: url("./../img/photo/spacer-min.jpg");
+    height: 20rem;
+    min-height: 25%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+    === Section Propriétés & Utilisation ===
+*/ 
+
+
+main section:nth-child(4) { 
+    padding: 4rem 5rem;
+}
+
+main section:nth-child(4) h2:after { 
+    border-top: .3rem solid var(--darkblue);
+}
+
+main section:nth-child(4) ul li { 
+    display: inline-block;
+}
+
+main section:nth-child(4) ul li a { 
+    font-family: 'OpenSans-Bold';
+    font-size: 2rem;
+    letter-spacing: .2rem;
+}
+
+main section:nth-child(4)>ul li:nth-child(2) { 
+    margin: 0 20rem;
+}
+
+main section:nth-child(4) article { 
+    margin: 3rem 0;
+}
+
+main section:nth-child(4) ul:last-child li { 
+    display: block;
+    background-image: url('./../img/puce.png');
+    background-repeat: no-repeat;
+    line-height: 5rem;
+    padding-left: 5rem;
+    font-family: 'OpenSans-Regular';
+    font-size: 1.5rem;
+}
+
+main section:nth-child(4) ul:last-child span { 
+    font-family: 'OpenSans-SemiBold';
+    color: var(--darkblue);
+}
+
+/*
+    === Spacer n°2 ===
+*/
+
+main section:nth-child(5 ){ 
+    height: 20rem;
+    background-image: url('./../img/photo/spacer2.jpg');
+    min-height: 25%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+main section:nth-child(5) h3 { 
+    color: white;
+    font-size: 5rem;
+    letter-spacing: .5rem;
+}
+
+main section:nth-child(5) a { 
+    border: .2rem solid white;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    border-radius: .2rem;
+    color:white;
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
+}
+
+main section:nth-child(5) i { 
+    margin: 0 1rem;
+}
+
+/*
+    === Section Composition ===
+*/
+
+main section:nth-child(6) { 
+    padding: 4rem 5rem;
+}
+
+main section:nth-child(6) h2:after { 
+    border-top: .3rem solid var(--green);
+}
+
+main section:nth-child(6) p:first-of-type { 
+    font-family: 'OpenSans-Bold';
+}
+
+main section:nth-child(6) ul { 
+    margin: 3rem 0;
+    width: 65%;
+}
+
+main section:nth-child(6) ul li { 
+    font-family: 'OpenSans-Regular';
+    text-align: justify;
+}
+
+main section:nth-child(6) ul li:first-child { 
+    font-family: 'OpenSans-SemiBold';
+    margin-bottom: .5rem;
+}
+
+/*
+    === Section Focus ===
+*/
+
+main section:nth-child(7) { 
+    background-color: var(--brown);
+    padding: 4rem 5rem;
+}
+
+main section:nth-child(7)>section { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+main section:nth-child(7) figure { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main section:nth-child(7) figure figcaption{ 
+  font-family: 'OpenSans-Bold';
+}
+
+main section:nth-child(7) figure img { 
+    width: 200px;
+    height: 200px;
+}
+
+main section:nth-child(7) figure:first-child img{ 
+    background-color: var(--blue);
+}
+
+main section:nth-child(7) figure:nth-child(2) img { 
+    background-color: var(--pink);
+}
+
+main section:nth-child(7) figure:nth-child(3) img { 
+    background-color: var(--green);
+}
+
+main section:nth-child(7) figure:nth-child(4) img { 
+    background-color: var(--darkblue);
+}
+
+main section:nth-child(7) figure:last-child img{ 
+    background-color: var(--darkgreen);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

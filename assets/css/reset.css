@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
@@ -11,7 +13,10 @@
     outline: none;
 }
 
-
-/* html { 
+html { 
     font-size: 62.5%;
-} */
+}
+
+body {
+    font-size: 1.5rem;
+}
