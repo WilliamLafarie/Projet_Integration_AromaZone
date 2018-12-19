@@ -18,11 +18,11 @@
     === Globales ===
 */
 
-p,a,h1,h2,h3 {
+p,a,h1,h2,h3, figcaption {
     color:var(--text);
 }
 
-p,a {
+p,a,li {
     font-family: 'OpenSans-Regular'
 }
 
@@ -151,9 +151,7 @@ nav ul li:nth-child(even) img {
 */ 
 
 main section:first-child {
-    width: 100%;
     font-size: 0;
-    text-align: center;
 }
 
 main section:first-child section {
@@ -464,52 +462,106 @@ main section:nth-child(6) ul li:first-child {
 main section:nth-child(7) { 
     background-color: var(--brown);
     padding: 4rem 5rem;
+    text-align: center;
 }
 
-main section:nth-child(7)>section { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 40%;
-    margin: 0 auto;
+main section:nth-child(7) h2 { 
+    text-align: left;
 }
 
 main section:nth-child(7) figure { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    display: inline-block;
+    padding: 5rem 12rem;
 }
 
 main section:nth-child(7) figure figcaption{ 
-  font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-SemiBold';
 }
 
 main section:nth-child(7) figure img { 
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
 }
 
-main section:nth-child(7) figure:first-child img{ 
+main section:nth-child(7) figure:nth-child(2) img{ 
     background-color: var(--blue);
 }
 
-main section:nth-child(7) figure:nth-child(2) img { 
+main section:nth-child(7) figure:nth-child(3) img { 
     background-color: var(--pink);
 }
 
-main section:nth-child(7) figure:nth-child(3) img { 
+main section:nth-child(7) figure:nth-child(4) img { 
     background-color: var(--green);
 }
 
-main section:nth-child(7) figure:nth-child(4) img { 
+main section:nth-child(7) figure:nth-child(5) img { 
     background-color: var(--darkblue);
 }
 
 main section:nth-child(7) figure:last-child img{ 
     background-color: var(--darkgreen);
 }
+
+/*
+    === Section Produits Associés ===
+*/
+
+main section:nth-child(8){
+    padding: 4rem 5rem;
+    text-align: center;
+    border-bottom: .1rem solid var(--text);
+}
+
+main section:nth-child(8) h2{
+    text-align: center;
+}
+
+main section:nth-child(8) figure { 
+    display: inline-block;
+    padding: 0 5rem;
+}
+
+main section:nth-child(8) figure img { 
+    max-width: 30rem;
+    max-height: 30rem;
+}
+
+main section:nth-child(8) figure ul { 
+   text-align: left;
+}
+
+main section:nth-child(8) ol li { 
+    display: inline-block;
+}
+
+main section:nth-child(8) ol { 
+    margin-top: 1rem;
+}
+
+main section:nth-child(8) ol img { 
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+}
+
+main section:nth-child(8) ul li:first-child { 
+    font-size: 1.2rem;
+    color: #696969;
+    margin-bottom: 1rem;
+    letter-spacing: .1rem;
+}
+
+main section:nth-child(8) ol li:last-child { 
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
 
 
 
