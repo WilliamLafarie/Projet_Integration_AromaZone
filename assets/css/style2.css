@@ -31,13 +31,13 @@ h1,h2,h3 {
     font-weight: normal;
 }
 
-main section h2 {
+main>section h2 {
     font-size: 5rem;
     font-family: 'Amatic-Bold';
     letter-spacing: .5rem;
 }
 
-main section h2:after { 
+main>section h2:after { 
     content: '';
     display: block;
     height: 2rem;
@@ -83,6 +83,10 @@ header section {
 header form {
     border-bottom: .1rem solid var(--darkblue);
     margin: 0 2rem;
+}
+
+header form input { 
+    font-family: 'OpenSans-Regular';
 }
 
 header form button { 
@@ -150,11 +154,11 @@ nav ul li:nth-child(even) img {
     === Section Produit ===
 */ 
 
-main section:first-child {
+main>section:first-child {
     font-size: 0;
 }
 
-main section:first-child section {
+main>section:first-child section {
     display: inline-block;
     vertical-align: top;
     background-color: var(--brown);
@@ -162,57 +166,57 @@ main section:first-child section {
     padding: 8rem 0;
 }
 
-main section:first-child section:last-child {
+main>section:first-child section:last-child {
     background-image: url('./../img/photo/photo.jpg');
     background-size: cover;
 }
 
-main section:first-child section:first-child ul {
+main>section:first-child section:first-child ul {
     text-align: center;
 }
 
-main section:first-child section:first-child ul:first-child {
+main>section:first-child section:first-child ul:first-child {
     border-top: .1rem solid var(--text);
     border-bottom: .1rem solid var(--text);
 }
 
-main section:first-child section:first-child ul:first-child li {
+main>section:first-child section:first-child ul:first-child li {
     display: inline-block;
     padding: 1.5rem;
 }
 
-main section:first-child section:first-child ul li a {
+main>section:first-child section:first-child ul li a {
     font-family: 'OpenSans-Regular';
     font-size: 1.5rem;
 }
 
-main section:first-child section:first-child h3 {
+main>section:first-child section:first-child h3 {
     font-size: 3.5rem;
     letter-spacing: .1rem;
     text-align: center;
     margin-top: 4rem;
 }
 
-main section:first-child section:first-child h1 {
+main>section:first-child section:first-child h1 {
     font-size: 7rem;
     word-spacing: 1rem;
     letter-spacing: .5rem;
     text-align: center;
 }
 
-main section:first-child section:first-child ul:last-of-type {
+main>section:first-child section:first-child ul:last-of-type {
    padding: 2rem 0;
 }
 
-main section:first-child section:first-child ul:last-of-type li {
+main>section:first-child section:first-child ul:last-of-type li {
     display: inline-block;
 }
 
-main section:first-child section:first-child ul:last-of-type li img {
+main>section:first-child section:first-child ul:last-of-type li img {
     max-width: 25px;
 }
 
-main section:first-child section:first-child p:first-of-type {
+main>section:first-child section:first-child p:first-of-type {
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: .1rem;
@@ -220,7 +224,7 @@ main section:first-child section:first-child p:first-of-type {
     padding: 2rem 16.5rem;
 }
 
-main section:first-child section:first-child p:last-of-type {
+main>section:first-child section:first-child p:last-of-type {
     font-family: 'OpenSans-SemiBold';
     font-size: 3rem;
     letter-spacing: .1rem;
@@ -228,17 +232,17 @@ main section:first-child section:first-child p:last-of-type {
     text-align: center;
 } 
 
-main section:first-child form { 
+main>section:first-child form { 
     text-align: center;
 }
 
-main section:first-child form img {
+main>section:first-child form img {
     max-width: 3.2rem;
     max-height: 3.2rem;
     vertical-align: middle;
 }
 
-main section:first-child form input {
+main>section:first-child form input {
     font-family: 'OpenSans-SemiBold';
     font-size: 2rem;
     width: 8rem;
@@ -248,11 +252,11 @@ main section:first-child form input {
     vertical-align: middle;
 }
 
-main section:first-child form div {
+main>section:first-child form div {
     margin: 2rem 0;
 }
 
-main section:first-child form button:first-of-type {
+main>section:first-child form button:first-of-type {
     background-color: var(--darkblue);
     color:white;
     text-transform: uppercase;
@@ -265,7 +269,7 @@ main section:first-child form button:first-of-type {
     margin-right: 0.5rem;
 }
 
-main section:first-child form button:last-of-type {
+main>section:first-child form button:last-of-type {
     background-color: transparent;
     border: .1rem solid var(--darkblue);
     font-family: 'OpenSans-Bold';
@@ -276,7 +280,7 @@ main section:first-child form button:last-of-type {
     height: 5rem;
  }
 
- main section:first-child form button:last-of-type img {
+ main>section:first-child form button:last-of-type img {
     max-width: 2.5rem;
  }
 
@@ -285,17 +289,17 @@ main section:first-child form button:last-of-type {
     === Section Présentation ===
 */ 
 
-main section:nth-child(2) {
+main>section:nth-child(2) {
     padding: 5rem 0;
     text-align: center;
 }
 
-main section:nth-child(2) h2:after { 
+main>section:nth-child(2) h2:after { 
     margin: 1rem auto;
     border-top: .3rem solid var(--pink);
 }
 
-main section:nth-child(2) p { 
+main>section:nth-child(2) p { 
     text-align: justify;
     text-align-last: left;
     font-size: 1.5rem;
@@ -309,7 +313,7 @@ main section:nth-child(2) p {
     === Spacer n°1 ===
 */ 
 
-main section:nth-child(3) {
+main>section:nth-child(3) {
     background-image: url("./../img/photo/spacer-min.jpg");
     height: 20rem;
     min-height: 25%;
@@ -324,33 +328,33 @@ main section:nth-child(3) {
 */ 
 
 
-main section:nth-child(4) { 
+main>section:nth-child(4) { 
     padding: 4rem 5rem;
 }
 
-main section:nth-child(4) h2:after { 
+main>section:nth-child(4) h2:after { 
     border-top: .3rem solid var(--darkblue);
 }
 
-main section:nth-child(4) ul li { 
+main>section:nth-child(4) ul li { 
     display: inline-block;
 }
 
-main section:nth-child(4) ul li a { 
+main>section:nth-child(4) ul li a { 
     font-family: 'OpenSans-Bold';
     font-size: 2rem;
     letter-spacing: .2rem;
 }
 
-main section:nth-child(4)>ul li:nth-child(2) { 
+main>section:nth-child(4)>ul li:nth-child(2) { 
     margin: 0 20rem;
 }
 
-main section:nth-child(4) article { 
+main>section:nth-child(4) article { 
     margin: 3rem 0;
 }
 
-main section:nth-child(4) ul:last-child li { 
+main>section:nth-child(4) ul:last-child li { 
     display: block;
     background-image: url('./../img/puce.png');
     background-repeat: no-repeat;
@@ -360,7 +364,7 @@ main section:nth-child(4) ul:last-child li {
     font-size: 1.5rem;
 }
 
-main section:nth-child(4) ul:last-child span { 
+main>section:nth-child(4) ul:last-child span { 
     font-family: 'OpenSans-SemiBold';
     color: var(--darkblue);
 }
@@ -369,7 +373,7 @@ main section:nth-child(4) ul:last-child span {
     === Spacer n°2 ===
 */
 
-main section:nth-child(5 ){ 
+main>section:nth-child(5 ){ 
     height: 20rem;
     background-image: url('./../img/photo/spacer2.jpg');
     min-height: 25%;
@@ -401,13 +405,13 @@ main section:nth-child(5 ){
     justify-content: center;
 }
 
-main section:nth-child(5) h3 { 
+main>section:nth-child(5) h3 { 
     color: white;
     font-size: 5rem;
     letter-spacing: .5rem;
 }
 
-main section:nth-child(5) a { 
+main>section:nth-child(5) a { 
     border: .2rem solid white;
     -webkit-border-radius: .2rem;
     -moz-border-radius: .2rem;
@@ -420,7 +424,7 @@ main section:nth-child(5) a {
     margin: 1.5rem 0;
 }
 
-main section:nth-child(5) i { 
+main>section:nth-child(5) i { 
     margin: 0 1rem;
 }
 
@@ -428,29 +432,31 @@ main section:nth-child(5) i {
     === Section Composition ===
 */
 
-main section:nth-child(6) { 
+main>section:nth-child(6) { 
     padding: 4rem 5rem;
 }
 
-main section:nth-child(6) h2:after { 
+main>section:nth-child(6) h2:after { 
     border-top: .3rem solid var(--green);
 }
 
-main section:nth-child(6) p:first-of-type { 
+main>section:nth-child(6) p:first-of-type { 
     font-family: 'OpenSans-Bold';
 }
 
-main section:nth-child(6) ul { 
+main>section:nth-child(6) ul { 
     margin: 3rem 0;
     width: 65%;
 }
 
-main section:nth-child(6) ul li { 
+main>section:nth-child(6) ul li { 
     font-family: 'OpenSans-Regular';
     text-align: justify;
+    line-height: 1.5;
+    color:var(--text);
 }
 
-main section:nth-child(6) ul li:first-child { 
+main>section:nth-child(6) ul li:first-child { 
     font-family: 'OpenSans-SemiBold';
     margin-bottom: .5rem;
 }
@@ -459,47 +465,47 @@ main section:nth-child(6) ul li:first-child {
     === Section Focus ===
 */
 
-main section:nth-child(7) { 
+main>section:nth-child(7) { 
     background-color: var(--brown);
     padding: 4rem 5rem;
     text-align: center;
 }
 
-main section:nth-child(7) h2 { 
+main>section:nth-child(7) h2 { 
     text-align: left;
 }
 
-main section:nth-child(7) figure { 
+main>section:nth-child(7) figure { 
     display: inline-block;
     padding: 5rem 12rem;
 }
 
-main section:nth-child(7) figure figcaption{ 
+main>section:nth-child(7) figure figcaption{ 
   font-family: 'OpenSans-SemiBold';
 }
 
-main section:nth-child(7) figure img { 
+main>section:nth-child(7) figure img { 
     width: 20rem;
     height: 20rem;
 }
 
-main section:nth-child(7) figure:nth-child(2) img{ 
+main>section:nth-child(7) figure:nth-child(2) img{ 
     background-color: var(--blue);
 }
 
-main section:nth-child(7) figure:nth-child(3) img { 
+main>section:nth-child(7) figure:nth-child(3) img { 
     background-color: var(--pink);
 }
 
-main section:nth-child(7) figure:nth-child(4) img { 
+main>section:nth-child(7) figure:nth-child(4) img { 
     background-color: var(--green);
 }
 
-main section:nth-child(7) figure:nth-child(5) img { 
+main>section:nth-child(7) figure:nth-child(5) img { 
     background-color: var(--darkblue);
 }
 
-main section:nth-child(7) figure:last-child img{ 
+main>section:nth-child(7) figure:last-child img{ 
     background-color: var(--darkgreen);
 }
 
@@ -507,53 +513,143 @@ main section:nth-child(7) figure:last-child img{
     === Section Produits Associés ===
 */
 
-main section:nth-child(8){
+main>section:nth-child(8){
     padding: 4rem 5rem;
     text-align: center;
     border-bottom: .1rem solid var(--text);
 }
 
-main section:nth-child(8) h2{
+main>section:nth-child(8) h2{
     text-align: center;
 }
 
-main section:nth-child(8) figure { 
+main>section:nth-child(8) figure { 
     display: inline-block;
     padding: 0 5rem;
 }
 
-main section:nth-child(8) figure img { 
+main>section:nth-child(8) figure img { 
     max-width: 30rem;
     max-height: 30rem;
 }
 
-main section:nth-child(8) figure ul { 
+main>section:nth-child(8) figure ul { 
    text-align: left;
 }
 
-main section:nth-child(8) ol li { 
+main>section:nth-child(8) ol li { 
     display: inline-block;
 }
 
-main section:nth-child(8) ol { 
+main>section:nth-child(8) ol { 
     margin-top: 1rem;
 }
 
-main section:nth-child(8) ol img { 
+main>section:nth-child(8) ol img { 
     max-width: 2.5rem;
     max-height: 2.5rem;
 }
 
-main section:nth-child(8) ul li:first-child { 
+main>section:nth-child(8) ul li:first-child { 
     font-size: 1.2rem;
     color: #696969;
     margin-bottom: 1rem;
     letter-spacing: .1rem;
 }
 
-main section:nth-child(8) ol li:last-child { 
+main>section:nth-child(8) ol li:last-child { 
     text-decoration: underline;
 }
+
+main>section:nth-child(9) { 
+    padding: 4rem 5rem;
+}
+
+main>section:nth-child(9) h2:after { 
+    border-top: .3rem solid var(--darkgreen);
+}
+
+main>section:nth-child(9)>article:nth-child(2) { 
+   font-size: 0;
+   width: 50%;
+}
+
+main>section:nth-child(9) article:nth-child(2) section:first-child{ 
+    display: inline-block;
+    width: 50%;
+    background-color: var(--darkblue);
+    font-size:1.5rem;
+    color:white;
+}
+
+main>section:nth-child(9) article:nth-child(2) section:last-child { 
+    display: inline-block;
+    width: 50%; 
+}
+
+main>section:nth-child(9) article:nth-child(2) section:first-child ul:first-child { 
+    text-align: center;
+}
+
+main>section:nth-child(9) article:nth-child(2) section:first-child ul:first-child li ol li { 
+    display: inline-block;
+}
+
+main>section:nth-child(9) article:nth-child(2) section:first-child ul:first-child li { 
+    display: inline-block;
+}
+
+main>section:nth-child(9) article:nth-child(2) section:first-child ul:first-child li ol li img,
+main>section:nth-child(9) article:nth-child(2) section:last-child ul li ol li img { 
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+main>section:nth-child(9) article:nth-child(2) section:last-child ul li ol li { 
+    display: inline-block;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+main>section:last-child { 
+    padding: 4rem 5rem;
+    text-align: center;
+}
+
+main>section:last-child figure { 
+    display: inline-block;
+    padding: 0 10rem;
+}
+
+main>section:last-child figure img { 
+    width: 100%;
+    max-width: 8rem;
+    max-height: 8rem;
+}
+
+
+main>section:last-child figure figcaption { 
+    font-family: 'Amatic';
+    font-size: 3rem;
+    color:var(--text);
+    letter-spacing: .1rem;
+}
+
+/*
+    Footer
+*/
+
+footer { 
+    background-color: var(--brown);
+}
+
+
+
+
+
+
+
+
 
 
 
