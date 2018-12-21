@@ -561,6 +561,11 @@ main>section:nth-child(8) ol li:last-child {
     text-decoration: underline;
 }
 
+/*
+    === Section Avis ===
+*/
+
+
 main>section:nth-child(9) { 
     padding: 4rem 5rem;
 }
@@ -636,12 +641,92 @@ main>section:last-child figure figcaption {
 }
 
 /*
-    Footer
+    Footer section
 */
 
-footer { 
+footer section:first-child {
+    padding: 5rem 5rem;
+    background-color: var(--brown);
+    display: flex;
+    justify-content: space-around;
+    border-bottom: .1rem solid var(--darkblue);
+}
+
+footer section:first-child ul li {
+    text-transform: uppercase;
+    color: var(--darkblue);
+    font-family: 'OpenSans-Bold';
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    padding: 1rem 0;
+}
+
+footer section:first-child ul:nth-child(2) li:nth-child(3),footer section ul:nth-child(2) li:last-child {
+    color: var(--text);
+}
+
+footer section:first-child ul:last-child{
+    padding-left: 10rem;
+}
+
+footer section:first-child ul:last-child ol li{
+    display: inline-block;
+}
+
+footer section:first-child ul:last-child {
+    border-left: .1rem solid var(--darkblue);
+}
+
+footer section:first-child ul:last-child li form input {
+   height: 4rem;
+   padding: 0 1rem;
+   font-family: 'OpenSans-SemiBold';
+}
+
+footer section:first-child ul:last-child li form button {
+    background-color: var(--darkblue);
+    color:white;
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+    padding: 1rem;
+    margin-right: 0.5rem;
+}
+
+footer section:first-child ul:last-child ol li a img {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+}
+
+footer section:first-child ul:last-child li ol li {
+    padding: 0 2rem;
+}
+
+footer section:first-child ul:last-child li ol li:first-child {
+    padding-left: 0;
+ }
+
+ footer section:first-child ul:last-child>li:nth-child(3) {
+    margin-top: 2rem;
+ }
+
+ footer section:last-child { 
+    padding: 5rem 5rem;
     background-color: var(--brown);
 }
+
+ footer section:last-child ul li { 
+     display: inline-block;
+ }
+
+
+
+
+
+
+
 
 
 
